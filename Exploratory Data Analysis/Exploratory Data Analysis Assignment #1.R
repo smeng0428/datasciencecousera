@@ -10,5 +10,5 @@ power1 <- filter(power, Date=="1/2/2007"|Date=="2/2/2007")
 ##change data type from char to appropriate forms
 power1[,3:9] <- sapply(power1[,3:9], as.numeric)
 power1[,1] <- lapply(power1[,1], dmy)
-power1[,2] <- lapply(power1[,2], hms)
+
 
